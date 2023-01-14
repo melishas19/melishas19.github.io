@@ -29,6 +29,16 @@ function scrolling() {
         document.getElementById("topnav").style.position = "unset";*/
     }
 
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        document.getElementById("about_slide").style.animation = "right_to_left 5s ease";
+    }
+    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+        document.getElementById("project_slide").style.animation = "left_to_right 5s ease";
+    }
+    if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+        document.getElementById("contact_slide").style.animation = "right_to_left 5s ease";
+    }
+
     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
         document.getElementById("home_active").style.color = "rgb(0,0,0)";
         document.getElementById("about_active").style.color = "rgb(145 155 217)";
@@ -40,6 +50,7 @@ function scrolling() {
         document.getElementById("about_active").style.color = "rgb(0,0,0)";
         document.getElementById("project_active").style.color = "rgb(145 155 217)";
         document.getElementById("contact_active").style.color = "rgb(0,0,0)";
+
         
     }
     if (document.body.scrollTop > 1100 || document.documentElement.scrollTop > 1100) {
@@ -47,6 +58,7 @@ function scrolling() {
         document.getElementById("about_active").style.color = "rgb(0,0,0)";
         document.getElementById("project_active").style.color = "rgb(0,0,0)";
         document.getElementById("contact_active").style.color = "rgb(145 155 217)";
+
         
     }
 }
