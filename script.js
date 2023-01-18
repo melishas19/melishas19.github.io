@@ -1,6 +1,7 @@
 window.onscroll = function() {scrolling()};
 
 function scrolling() {
+    
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         document.getElementById("topnav").style.backgroundColor = "rgb(255, 255, 255, .9)";
         document.getElementById("topnav").style.color = "rgb(0,0,0, .7)";
@@ -45,15 +46,16 @@ function scrolling() {
         document.getElementById("project_active").style.color = "rgb(0,0,0)";
         document.getElementById("contact_active").style.color = "rgb(0,0,0)";
     }
-    if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
         document.getElementById("home_active").style.color = "rgb(0,0,0)";
         document.getElementById("about_active").style.color = "rgb(0,0,0)";
         document.getElementById("project_active").style.color = "rgb(145 155 217)";
         document.getElementById("contact_active").style.color = "rgb(0,0,0)";
+        
 
         
     }
-    if (document.body.scrollTop > 1100 || document.documentElement.scrollTop > 1100) {
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
         document.getElementById("home_active").style.color = "rgb(0,0,0)";
         document.getElementById("about_active").style.color = "rgb(0,0,0)";
         document.getElementById("project_active").style.color = "rgb(0,0,0)";
