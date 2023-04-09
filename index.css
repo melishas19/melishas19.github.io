@@ -1,7 +1,11 @@
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
 .body {
-    background-color: rgb(136, 130, 130);
-    overflow-y: scroll;
-    background-image: url('timeline1.jpg');
+    background-color: rgb(7 30 54);
+    overflow-y: overlay;
+    /*background-image: url('timeline1.jpg');*/
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -13,12 +17,11 @@
 
 /* width */
 .body::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
   }
   
   /* Track */
   .body::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px rgb(77, 85, 119); 
     border-radius: 10px;
   }
    
@@ -42,9 +45,10 @@
 }
 
 .profile_pic{
-    height: 300px;
-    width: 230px;
-    border-radius: 50%;
+    height: 70%;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10%;
     margin: 30px;
     margin-bottom: 0;
     border: white double;
@@ -52,30 +56,44 @@
 
 .myname{
     margin: 40px;
-    margin-top: 0;
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    color: white;
+    color: rgb(190, 190, 190);
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .myname p {
+    margin: 0;
+}
+
+.university{
+    font-size: large;
+}
+
+.major {
     font-size: x-large;
+    color:white; 
+    margin-bottom: 5px;
+}
+
+.myname h4 {
     margin: 0;
 }
 
 .myname h1 {
     font-size: 50px;
+    margin: 5px 0;
+    color: cyan;
 }
 
 .paragraph {
     width: 100%;
-    background-color: rgb(195, 201, 216);
+    background-color: rgb(7 30 54);
     padding-bottom: 6vh;
 }
+
 
 
 
@@ -91,7 +109,7 @@
     padding-right: 10%;
     position: sticky;
     top:0;
-    height: 10vh;
+    height: 8vh;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -115,12 +133,12 @@
 }
 
 .topnav a:hover::before {
-    content: ">>";
+    content: "</>";
     opacity: 5;
 }
 
 .topnav a.active {
-    color: rgb(94 38 38);
+    color: rgb(38, 94, 80);
 }
 
 
@@ -164,15 +182,20 @@
 
 .middle_content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content:center;
     align-items: center;
+    height: 90vh;
 }
 
 .middle_contact_content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
+}
+
+.middle_contact_content span{
+    color:white;
 }
 
 .button_content {
@@ -189,8 +212,9 @@
     padding: 10px;
     border-radius: 10px;
     width: 150px;
-    background-color: #5e5e8e;
-    color: white;
+    background-color: rgb(7 30 54);
+    border: cyan solid 1px;
+    color: cyan;
     font-size: large;
     display: flex;
     flex-direction: row;
@@ -211,7 +235,12 @@
     flex-direction: row;
     justify-content: center;
     padding-top: 5%;
+
+    opacity: 0;
 }
+
+ 
+
 
 .nav_opt_reverse{
     flex-direction: row-reverse;
@@ -222,6 +251,7 @@
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-right: 5vw;
     margin-left: 5vw;
+    color: cyan;
 }
 
 .right_side{
@@ -230,17 +260,17 @@
     padding: 50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: large;
-    color:rgb(77, 70, 70);
-    background-color: rgba(240, 248, 255, 0.612);
+    color:rgb(158, 158, 158);
+    background-color: rgba(7,30,54, 0.612);
     border-radius: 25px;
-    
+    border: cyan solid 1px;
 }
 
 .project_title{
-    color:black;
+    color:cyan;
     font-weight: 550;
 }
-
+/*
 @keyframes right_to_left{
     from {
         margin-left: 20%;
@@ -256,5 +286,88 @@
     }
     to {
         margin-right:0;
+    }
+}
+*/
+
+/* --------media screen ----------------*/
+
+@media only screen and (max-width: 940px) {
+     .middle_content{
+        flex-direction: column;
+     }
+     .profile_pic {
+        width: auto;
+        height: 90%;
+     }
+     .profile_pic_div {
+        height: 50%;
+        margin-top: 9vh;
+     }
+
+     .paragraph{
+        margin-top: 9vh;
+     }
+  }
+
+@media only screen and (max-width: 660px) {
+    .button_content{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 200px;
+    }
+    
+    .links{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .button{
+        width: 60%;
+    }
+    .nav_opt{
+        flex-direction: column;
+        align-items: center;
+    }
+    .right_side ul{
+        padding: 10px;
+    }
+    .right_side{
+        padding: 15px;
+        width: 70vw;
+    }
+}
+
+@media only screen and (max-width: 440px ) {
+    .myname h1{
+        font-size: 30px;
+    }
+    .major{
+        font-size: large;
+    }
+
+    .university{
+        font-size:small;
+    }
+}
+
+@media only screen and (max-height: 820px) and (max-width: 660px) {
+    .profile_pic_div{
+        margin-top: 25vh;
+    }
+    .paragraph{
+        margin-top: 25vh;
+    }
+}
+
+@media only screen and (max-height: 620px) and (max-width: 660px) {
+    .profile_pic_div{
+        margin-top: 35vh;
+    }
+    .paragraph{
+        margin-top: 35vh;
     }
 }

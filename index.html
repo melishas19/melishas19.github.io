@@ -1,123 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <title>Melisha Website</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
+  <body class="body">
+    <div class="content">
+      <header class="topnav" id="topnav">
+        <a id="home_active" href="#home"><span> HOME </span></a>
+        <a id="about_active" href="#about"><span> ABOUT </span></a>
+        <a id="project_active" href="#project"><span> PROJECT </span></a>
+        <a id="contact_active" href="#contact"><span> CONTACT </span></a>
+      </header>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie-edge">
-        <title> Melisha Website</title>
-        <link rel="stylesheet" href="index.css">
-        
-    </head>
-
-
-    <body class="body" >
-        <div class="content">
-
-        <div class="topnav" id="topnav">
-            
-            
-                <a id="home_active" href="#home"><span> HOME </span></a>
-                <a id="about_active" href="#about"><span> ABOUT </span></a>
-                <a id="project_active" href="#project"><span> PROJECT </span></a>
-                <a id="contact_active" href="#contact"><span> CONTACT </span></a>
-            
-            
-        </div>
-
-        <div id="home" class="middle_content">
-        <div><img src="prof.jpg" alt="profile pic" class="profile_pic"></div>
-        <div class="myname">
-            <h1>Melisha Shakya</h1>
-            <p>Computer Science Major</p>
-            <p>Student at University at Buffalo School of Engineering and Applied Sciences</p>
-            
+      <section id="home" class="middle_content">
+        <div class="profile_pic_div"><img src="prof.jpg" alt="profile pic" class="profile_pic" /></div>
+        <div><div class="myname">
+            <h4>Hi, I'm</h4>
+          <h1>Melisha Shakya</h1>
+          <p class="major">Computer Science Major</p>
+          <p class="university">
+            Student at University at Buffalo School of Engineering and Applied
+            Sciences
+          </p>
         </div>
         <div class="button_content">
-            <a href="https://www.linkedin.com/in/melisha-shakya/" target="_blank" class="links"><button class="button"><img src="linkedin.jpg" alt="linkedin" class="icons">LinkedIn</button></a>
-            <a href="https://github.com/melishas19" target="_blank" class="links"><button class="button"><img src="github.jpg" alt="github" class="icons">GitHub</button></a>
-            <a href="resume.pdf" target="_blank" class="links"><button class="button"><img src="download.jpg" alt="download resume" class="icons">Resume</button></a>
+          <a
+            href="https://www.linkedin.com/in/melisha-shakya/"
+            target="_blank"
+            class="links"
+            ><button class="button">
+              <img src="linkedin.png" alt="linkedin" class="icons" />LinkedIn
+            </button></a
+          >
+          <a href="https://github.com/melishas19" target="_blank" class="links"
+            ><button class="button">
+              <img src="github.png" alt="github" class="icons" />GitHub
+            </button></a
+          >
+          <a href="resume.pdf" target="_blank" class="links"
+            ><button class="button">
+              <img
+                src="download.png"
+                alt="download resume"
+                class="icons"
+              />Resume
+            </button></a
+          >
         </div>
         </div>
+    </section>
 
-        <div class="paragraph">
-            <div id="about" class="nav_opt">
-                <div class="left_side"><h2>About</h2></div>
-                <div class="right_side" id="about_slide">
-                    <p>I am currently a senior at University at Buffalo pursuing bachelor's degree in Computer Science and I am expected to graduate in 2023. 
-                        I am passionate about computer software and programming languages. 
-                        Programming frontend, backend, software and making websites are few things that I enjoy. I am currently looking 
-                        for a job to apply my skills and I would be happy to talk in person about my qualifications, so feel free to shoot me an email or message me in my LinkedIn!</p>
-                </div>
+      <section class="paragraph">
+        <div id="about" class="nav_opt">
+          <div class="left_side"><h2>About</h2></div>
+          <div class="right_side" id="about_slide">
+            <p>
+              I am currently a senior at University at Buffalo pursuing
+              bachelor's degree in Computer Science and I am expected to
+              graduate in 2023. I am passionate about computer software and
+              programming languages. Programming frontend, backend, software and
+              making websites are few things that I enjoy. I am currently
+              looking for a job to apply my skills and I would be happy to talk
+              in person about my qualifications, so feel free to shoot me an
+              email or message me in my LinkedIn!
+            </p>
+          </div>
+        </div>
+        <div id="project" class="nav_opt nav_opt_reverse">
+          <div class="left_side"><h2>Projects</h2></div>
+          <div class="right_side" id="project_slide">
+            <ul>
+              <li>
+                <p class="project_title">Study-Seeker :</p>
+                <p>| React, CSS, Virtual Studio Code, GitHub</p>
+                <span
+                  >A web application of a student community, which nurtures
+                  growth and helps people succeed, all while aligning academic
+                  interests. It is a user-friendly application for students with
+                  features of searching, forming a group and connecting with
+                  other students.
+                </span>
+              </li>
+              <li>
+                <p class="project_title">Pulsar's Produce Pong :</p>
+                <p>
+                  | Flask, Flask-sockets, MongoDB, AJAX, Python, JavaScript,
+                  HTML, CSS, Virtual Studio Code, GitHub
+                </p>
+                <span
+                  >A competitive online multiplayer cooking game based on Pong
+                  with live interaction with users including gaming and
+                  messaging users. Winners of each round get a assigned
+                  ingredient and the match ends when both sides have enough
+                  ingredients to build a dish.
+                </span>
+              </li>
+              <li>
+                <p class="project_title">Conway's Game Of Life:</p>
+                <p>| C, VMware</p>
+                <span
+                  >Implemented a simplified version of John Horton Conway’s Game
+                  of Life to create a small project. It uses multidimensional
+                  arrays and introduce the concept of modifying a program’s data
+                  model to simplify computation.
+                </span>
+              </li>
+              <li><p class="project_title">Carpool Bull</p></li>
+              <p>| Figma</p>
+              <span>
+                A UX/UI design of a cross platform application for Univeristy
+                students without cars, that enables them to request and accept
+                rides to local stores.
+              </span>
+              <li>
+                <p class="project_title">Calculator</p>
+                | Scala, IntelliJ, Object Oriented
+              </li>
+              <li>
+                <p class="project_title">Rhyming Dictionary</p>
+                | Scala, IntelliJ, Object Oriented
+              </li>
+              <li>
+                <p class="project_title">Solitaire</p>
+                | Back-end Java
+              </li>
+              <li>
+                <p class="project_title">Tic Tac Toe</p>
+                | Back-end Java, AI
+              </li>
+              <li>
+                <p class="project_title">Battleship</p>
+                | Java, Object Oriented
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="contact" class="nav_opt">
+          <div class="left_side"><h2>Contact</h2></div>
+          <div class="right_side" id="contact_slide">
+            <div class="middle_contact_content">
+                <p> I am looking for new opportunies so feel free to contact me. I usually prefer email or linkedin to communicate. </p>
+              <span>(518)-961-6867</span>
+              <span>shakyamelisha@gmail.com</span>
             </div>
-            <div id="project" class="nav_opt nav_opt_reverse">
-                <div class="left_side"><h2>Projects</h2></div>
-                <div class="right_side" id="project_slide">
-                    <ul>
-                        <li><p class="project_title">Study-Seeker :  </p> <p>| React, CSS, Virtual Studio Code, GitHub</p>
-                            <span>A web application of a student community, which nurtures growth and helps people
-                                succeed, all while aligning academic interests.
-                                It is a user-friendly application for students with features of searching, forming a
-                                group and connecting with other students.
-                            </span>
-                        </li>
-                        <li><p class="project_title">Pulsar's Produce Pong : </p> <p>| Flask, Flask-sockets, MongoDB, AJAX, Python, JavaScript, HTML, CSS, Virtual Studio Code, GitHub</p> 
-                            <span>A competitive online multiplayer cooking game based on Pong with live interaction with users including
-                                gaming and messaging users. Winners of each round get a assigned ingredient and the match ends when 
-                                both sides have enough ingredients to build a dish. 
-                             </span>
-                        </li>
-                        <li><p class="project_title">Conway's Game Of Life: </p>
-                            <p>| C, VMware</p> 
-                            <span>Implemented a simplified version of John Horton Conway’s Game of Life to
-                                create a small project.
-                                It uses multidimensional arrays and introduce the concept of modifying a
-                                program’s data model to simplify computation.
-                                </span>
-                        </li>
-                        <li><p class="project_title">Carpool Bull</p></li>
-                            <p>| Figma </p>
-                            <span>
-                                A UX/UI design of a cross platform application for Univeristy students without cars, that enables them to request and accept rides to local stores.
-                            </span>
-                        <li><p class="project_title">Calculator</p> | Scala, IntelliJ, Object Oriented
-                        </li>
-                        <li>
-                            <p class="project_title">Rhyming Dictionary </p>| Scala, IntelliJ, Object Oriented
-                        </li>
-                        <li>
-                            <p class="project_title">Solitaire </p>| Back-end Java
-                        </li>
-                        <li>
-                            <p class="project_title">Tic Tac Toe </p>| Back-end Java, AI
-                        </li>
-                        <li>
-                            <p class="project_title">Battleship </p>| Java, Object Oriented
-                        </li>
-                    </ul>
-    
-                </div>
-            </div> 
-            <div id="contact" class="nav_opt" >
-                <div class="left_side"><h2>Contact</h2></div>
-                <div class="right_side" id="contact_slide">
-                    <div class="middle_contact_content">
-                        <p>(518)-961-6867</p><p>shakyamelisha@gmail.com</p>
-                    </div>
-                </div>
-            </div> 
+          </div>
         </div>
+    </section>
+    </div>
 
-
-        </div>
-        
-        
-
-        <script src="script.js"></script>
-
-
-    </body>
-
-
+    <script src="script.js"></script>
+  </body>
 </html>
