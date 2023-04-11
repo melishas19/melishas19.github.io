@@ -17,10 +17,20 @@
         <a id="contact_active" href="#contact"><span> CONTACT </span></a>
       </header>
 
+
+      <div id="mobile_topnav" class="mobile_topnav"><button class="openbtn" onclick="openNav()">☰</button></div>
+      <header class="mobile_nav" id="mobile_nav">
+        <a id="mx" href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+        <a id="mhome_active" href="#home" onclick="closeNav()"><span> HOME </span></a>
+        <a id="mabout_active" href="#about" onclick="closeNav()"><span> ABOUT </span></a>
+        <a id="mproject_active" href="#project" onclick="closeNav()"><span> PROJECT </span></a>
+        <a id="mcontact_active" href="#contact" onclick="closeNav()"><span> CONTACT </span></a>
+      </header>
+
       <section id="home" class="middle_content">
         <div class="profile_pic_div"><img src="prof.jpg" alt="profile pic" class="profile_pic" /></div>
         <div><div class="myname">
-            <h4>Hi, I'm</h4>
+            <h2>Hi, I'm</h2>
           <h1>Melisha Shakya</h1>
           <p class="major">Computer Science Major</p>
           <p class="university">
@@ -144,13 +154,17 @@
           <div class="left_side"><h2>Contact</h2></div>
           <div class="right_side" id="contact_slide">
             <div class="middle_contact_content">
-                <p> I am looking for new opportunies so feel free to contact me. I usually prefer email or linkedin to communicate. </p>
-              <span>(518)-961-6867</span>
+                <h2 style="color:cyan;">Let's Talk</h2>
+                <p> I am looking for new opportunies so feel free to contact me through LinkedIn or Email. </p>
+              
               <span>shakyamelisha@gmail.com</span>
             </div>
           </div>
         </div>
     </section>
+    <footer class="footer">
+      <h5>© 2023 Melisha Shakya. All rights reserved</h5>
+    </footer>
     </div>
 
     <script src="script.js"></script>
