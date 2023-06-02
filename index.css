@@ -275,7 +275,6 @@
 
 .right_side{
     width: 50vw;
-    text-align: justify;
     padding: 50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: large;
@@ -364,7 +363,7 @@
         padding: 10px;
     }
     .right_side{
-        padding: 15px;
+        padding: 30px;
         width: 70vw;
     }
 
