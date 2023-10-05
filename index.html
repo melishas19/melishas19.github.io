@@ -6,253 +6,238 @@
     <meta http-equiv="X-UA-Compatible" content="ie-edge" />
     <title>Melisha Website</title>
     <link rel="stylesheet" href="index.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
 
   <body class="body">
-    <div class="content">
-      <header class="topnav" id="topnav">
-        <a id="home_active" href="#home"><span> HOME </span></a>
-        <a id="about_active" href="#about"><span> ABOUT </span></a>
-        <a id="project_active" href="#project"><span> PROJECT </span></a>
-        <a id="contact_active" href="#contact"><span> CONTACT </span></a>
-      </header>
-
-
-      <div id="mobile_topnav" class="mobile_topnav"><button class="openbtn" onclick="openNav()">☰</button></div>
-      <header class="mobile_nav" id="mobile_nav">
-        <a id="mx" href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
-        <a id="mhome_active" href="#home" onclick="closeNav()"><span> HOME </span></a>
-        <a id="mabout_active" href="#about" onclick="closeNav()"><span> ABOUT </span></a>
-        <a id="mproject_active" href="#project" onclick="closeNav()"><span> PROJECT </span></a>
-        <a id="mcontact_active" href="#contact" onclick="closeNav()"><span> CONTACT </span></a>
-      </header>
-
-      <section id="home" class="middle_content">
-        <div class="profile_pic_div"><img src="prof.jpg" alt="profile pic" class="profile_pic" /></div>
-        <div><div class="myname">
-            <h2>Hi, I'm</h2>
-          <h1>Melisha Shakya</h1>
-          <p class="major">Software Engineer</p>
-          <p class="university">
-            Graduated from University at Buffalo School of Engineering and Applied
-            Sciences
-          </p>
-          <p class="university">
-            B.S. in Computer Science
-          </p>
+    <nav class="top_nav" id="top_nav" >
+      <div class="top_nav_desktop">
+        <div><a class="yes-bar" href="#home">MELISHA'S PORTFOLIO</a></div>
+        <div id="desktop_nav">
+          <ul class="top_link">
+            <li><a class="no-bar" href="#about">About</a></li>
+            <li><a class="no-bar" href="#project">Project</a></li>
+            <li><a class="no-bar" href="#skill">Skills</a></li>
+            <li><a class="no-bar" href="#contact">Contact</a></li>
+            <li><i id="fa-bars" class="fa fa-bars"></i></li>
+          </ul>
         </div>
-        <div class="button_content">
-          <a
-            href="https://www.linkedin.com/in/melisha-shakya/"
-            target="_blank"
-            class="links"
-            ><button class="button">
-              <img src="linkedin.png" alt="LinkedIn" class="icons" />LinkedIn
-            </button></a
-          >
-          <a href="https://github.com/melishas19" target="_blank" class="links"
-            ><button class="button">
-              <img src="github.png" alt="github" class="icons" />GitHub
-            </button></a
-          >
-          <a href="resume.pdf" target="_blank" class="links"
-            ><button class="button">
-              <img
-                src="download.png"
-                alt="download resume"
-                class="icons"
-              />Resume
-            </button></a
-          >
-        </div>
-        <hr>
-        </div>
-    </section>
-
-      <section class="paragraph">
-        <div id="about" class="nav_opt">
-          <div class="left_side"><h2>About</h2></div>
-          <div class="right_side" id="about_slide">
-            <p>
-              I am a software engineer who enjoys learning new materials, problem solving and recently graduated from University at Buffalo with B.S. in Computer Science. I am passionate about building innovative software solutions. 
-              Moreover, I have experience in software development, from requirements gathering to testing and deployment. Also skilled in front-end and back-end development, with a focus on creating user-friendly interfaces and scalable systems. 
-              I am a collaborative team player, adept at communicating and coordinating with cross-functional teams. 
-              I am eager to learn as well as adapt to new technologies and industry trends. 
-              I am also seeking opportunities to contribute to a dynamic software engineering team. Let's connect and explore how we can collaborate to create innovative solutions that drive positive impact.
-            </p>
-            <p>
-              Here are few of the skills I am proficient in:
-              <ul class="skills">
-                <li>HTML</li>
-                <li>JavaScript</li>
-                <li>CSS</li>
-                <li>Java</li>
-                <li>Python</li>
-                <li>C</li>
-                <li>React.js</li>
-                <li>Docker</li>
-                <li>MongoDB</li>
-                <li>MySql</li>
-                <li>AJAX</li>
-                <li>HTTP APIs</li>
-                <li>OCaml</li>
-                <li>Flask</li>
-              </ul>
-            </p>
-          </div>
-        </div>
-        <div id="project" class="nav_opt nav_opt_reverse">
-          <div class="left_side"><h2>Projects</h2></div>
-          <div class="right_side" id="project_slide">
-            <ul class="project_ul">
-              <li>
-                <div class="project_img_div">
-                  <img src="studyseeker.png" alt="Study Seeker app" class="project_img"/>
-                </div>
-                <div class="project_text_div">
-                  <p class="project_title">Study-Seeker :</p>
-                  <p>| React, CSS, Virtual Studio Code, GitHub</p>
-                  <span>
-                    A web application of a student community, which nurtures
-                    growth and helps people succeed, all while aligning academic
-                    interests. It is a user-friendly application for students with
-                    features of searching, forming a group and connecting with
-                    other students.
-                  </span>
-                  <p>
-                    <a href="https://github.com/CSE370HCI/commitment" target="_blank" class="project_link">
-                      <img src="github.png" alt="Study Seeker GitHub" class="project_link_logo"/> GitHub
-                    </a>
-                  </p>
-                </div>
-              </li>
-              <li>
-                <div class="project_img_div">
-                  <img src="producepong.png" alt="Produce Pong app" class="project_img"/>
-                </div>
-                <div class="project_text_div">
-                  <p class="project_title">Pulsar's Produce Pong :</p>
-                  <p>
-                  | Flask, Flask-sockets, MongoDB, AJAX, Python, JavaScript,
-                    HTML, CSS, Virtual Studio Code, GitHub
-                  </p>
-                  <span>
-                    A competitive online multiplayer cooking game based on Pong
-                  with live interaction with users including gaming and
-                  messaging users. Winners of each round get a assigned
-                  ingredient and the match ends when both sides have enough
-                  ingredients to build a dish.
-                  </span>
-                  <p>
-                    <a href="https://github.com/melishas19/Produce-Pong" target="_blank" class="project_link">
-                      <img src="github.png" alt="Produce Pong GitHub" class="project_link_logo"/> GitHub
-                    </a>
-                  </p>
-                  <p>
-                    <a href="https://producepong.com/" target="_blank" class="project_link">
-                      <img src="list-img.png" alt="Produce Pong Website" class="project_link_logo"/> Website
-                    </a>
-                  </p>
-                </div>
-              </li>
-              <li>
-                <div class="project_img_div">
-                  <img src="conways.png" alt="Conway’s Game of Life" class="project_img"/>
-                </div>
-                <div class="project_text_div">
-                  <p class="project_title">Conway's Game Of Life:</p>
-                  <p>| C, VMware</p>
-                  <span>
-                  Implemented a simplified version of John Horton Conway’s Game
-                  of Life to create a small project. It uses multidimensional
-                  arrays and introduce the concept of modifying a program’s data
-                  model to simplify computation.
-                  </span>
-                </div>
-              </li>
-              <li>
-                <div class="project_img_div">
-                  <img src="carpoolbull.png" alt="Carpool Bull app" class="project_img"/>
-                </div>
-                <div class="project_text_div">
-                  <p class="project_title">Carpool Bull</p>
-                  <p>| Figma</p>
-                  <span>
-                  A UX/UI design of a cross platform application for Univeristy
-                  students without cars, that enables them to request and accept
-                  rides to local stores.
-                  </span>
-                </div>
-              </li>
-              <li>
-                <div class="project_text_div">
-                  <p class="project_title">Calculator</p>
-                  <p>| Scala, IntelliJ, Object Oriented</p>
-                  <span>
-                    Developed a feature-rich calculator application using Scala, leveraging the Object-Oriented paradigm. 
-                    Implemented the project within the IntelliJ IDE, ensuring a streamlined development process.
-                  </span>
-                </div>
-              </li>
-              <li>
-                <div class="project_text_div">
-                  <p class="project_title">Rhyming Dictionary</p>
-                  <p>| Scala, IntelliJ, Object Oriented</p>
-                  <span>
-                    Designed and implemented a highly functional Rhyming Dictionary application using Scala, following the principles of Object-Oriented programming. 
-                    Utilized the robust capabilities of the IntelliJ IDE to ensure efficient development and testing.
-                  </span>
-                </div>
-              </li>
-              <li>
-                <div class="project_text_div">
-                  <p class="project_title">Solitaire</p>
-                  <p>| Back-end Java</p>
-                  <span>
-                    Created a sophisticated Solitaire game with a back-end implemented in Java. 
-                    Demonstrated proficiency in designing and implementing complex game logic to provide an immersive gaming experience.
-                  </span>
-                </div>
-              </li>
-              <li>
-                <div class="project_text_div">
-                  <p class="project_title">Tic Tac Toe</p>
-                  <p>| Back-end Java, AI</p>
-                  <span>
-                    Developed a Tic Tac Toe game using Java, featuring an AI opponent for challenging gameplay. 
-                    Utilized back-end Java programming techniques to implement the game's rules and AI algorithms, delivering a captivating user experience.
-                  </span>
-                </div>
-              </li>
-              <li>
-                <div class="project_text_div">
-                  <p class="project_title">Battleship</p>
-                  <p>| Java, Object Oriented</p>
-                  <span>
-                    Implemented a Java-based Battleship game using Object-Oriented programming principles.
-                    Demonstrated strong problem-solving skills by designing and developing the game logic and user interface for an engaging gameplay experience.
-                  </span>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div id="contact" class="nav_opt">
-          <div class="left_side"><h2>Contact</h2></div>
-          <div class="right_side" id="contact_slide">
-            <div class="middle_contact_content">
-                <h2 style="color:cyan;">Let's Talk</h2>
-                <p> I am looking for new opportunies so feel free to contact me through LinkedIn or Email. </p>
-              
-              <span>shakyamelisha@gmail.com</span>
-            </div>
-          </div>
-        </div>
-    </section>
-    <footer class="footer">
-      <h5>© 2023 Melisha Shakya. All rights reserved</h5>
-    </footer>
+      </div>
+      <div id="mobile_nav">
+        <ul class="mobile_link" id="mobile_link">
+          <li><a href="#about">About</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#skill">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    
+    <div class="icons">
+      <ul>
+        <li class="v-line"></li>
+        <li><a href="https://www.linkedin.com/in/melisha-shakya/" target="_blank" style="color:white;"><i class="fa fa-linkedin-square"></i></a></li>
+        <li><a href="https://github.com/melishas19" target="_blank" style="color:white;"><i class="fa fa-github"></i></a></li>
+        <li><a href="Melisha_Shakya_resume.pdf" target="_blank" style="color:white;"><i class="fa fa-file-pdf-o"></i></a></li>
+      </ul>
     </div>
+    
+    <section class="home_container" id="home">
+      <span class="smaller-naming">-Hello World!</span>
+      <span class="small-naming">I'm </span>
+        <span class="naming">Melisha Shakya</span>
+        <span class="small-naming">Software Engineering</span>
+    </section>
+    <section class="about_container" id="about">
+      <div class="about-paragraph">
+        <h1>About Me</h1>
+        <span>Im a Software Engineer. I am a recently graduate with B.S. in Computer Science. With a strong determination and passion for developing software application, I have been sharpening my skills on both the frontend and the backend development tools. I am always eager to work in a team, great at problem solving along with small details. My hobby outside of my career is to create digital arts and sketches.<span>
+          <p>Skills:</p>
+          <span>React, Java, JavaScript, CSS, HTML, Python</span>
+      </div>
+      <div>
+        <img src="https://media.licdn.com/dms/image/D4E03AQEVmcHL5lS_4g/profile-displayphoto-shrink_800_800/0/1672773525781?e=2147483647&v=beta&t=oG513VniUUddjANmGVYx__G7cp7fKy8OEoinSrfYs5Y" class="pfp"></img>
+      </div>
+    </section>
+    <section class="project_container" id="project">
+      <h1>Projects</h1>
+      <div class="all-projects">
+        <div class="project1">
+            <button><i class="fa fa-arrow-right"></i></button>
+            <div class="project-text">
+              <div class="project-text-inner">
+                <p><b>Study Seeker</b></p>
+                <p> This is a student community platform web app fostering growth and academic success, enabling connections based on shared academic interest.</p>
+                <p> Used Zenhub, GitHub, React.js, HTML, and CSS in Visual Studio Code.</p>
+                <a href="https://github.com/CSE370HCI/commitment" target="_blank" class="project_link" style="color: white;">
+                  <i class="fa fa-github"></i>GitHub
+                </a>
+              </div>
+            </div>
+            <img id="prj-img1" src="https://kinsta.com/wp-content/uploads/2019/01/portfolio-website-case-study.jpg" class="project1-bg">
+        </div>
+        <div class="project1">
+            <button><i class="fa fa-arrow-right"></i></button>
+            <div class="project-text">
+              <div class="project-text-inner">
+                <p><b>Pulsar's Produce Pong</b></p>
+                <p>This is a competitive cooking game with live interaction with users including gaming and messaging users.</p>
+                <p>Used Flask, flask-sockets, MongoDB, AJAX, Python, JavaScript, HTML, and CSS in Visual Studio Code.</p>
+                <a href="https://github.com/melishas19/Produce-Pong" target="_blank" class="project_link" style="color: white;">
+                  <i class="fa fa-github"></i>GitHub
+                </a>
+              </div>
+            </div>
+            <img id="prj-img2" src="https://designshack.net/wp-content/uploads/robertl.jpg" class="project1-bg">
+        </div>
+        <div class="project1">
+            <button><i class="fa fa-arrow-right"></i></button>
+            <div class="project-text">
+              <div class="project-text-inner">
+                <p><b>Conway's Game of Life</b></p>
+                <p>Implemented a simplified version of John Horton Conway’s Game of Life to create a small project.</p>
+                <p>Used C Programming language in VMware</p>
+              </div>
+            </div>
+            <img id="prj-img3" src="https://kinsta.com/wp-content/uploads/2019/01/portfolio-website-case-study.jpg" class="project1-bg">
+        </div>
+        <div class="project1">
+            <button><i class="fa fa-arrow-right"></i></button>
+            <div class="project-text">
+              <div class="project-text-inner">
+                <p><b>CarPool Bull</b></p>
+                <p>This is UX/UI design of a cross platform application for Univeristy students that enables them to request/give rides to local stores.</p>
+                <p>Used Figma for the functionality and product design.</p>
+                <a href="https://www.figma.com/proto/1tCORRDhqOlPaks1K7A8nW/Carpool-Bull?node-id=1-3&starting-point-node-id=1%3A3&mode=design&t=kw6XTjVuTzt1NO2c-1" target="_blank" class="project_link" style="color: white;">
+                  <i class="fa fa-object-group"></i>Figma
+                </a>
+              </div>
+            </div>
+            <img id="prj-img4" src="https://kinsta.com/wp-content/uploads/2019/01/portfolio-website-case-study.jpg" class="project1-bg">
+        </div>
+      </div>
+    </section>
+    <section class="skill_container" id="skill">
+      <div class="skill-paragraph">
+        <h1>Skills:</h1>
+        <div class="skill-icons">
+          <div>
+            <i class="fa fa-code"></i>
+            <h3>Front End</h3>
+            <p>HTML</p>
+            <p>CSS & SASS</p>
+            <p>JavaScript</p>
+            <p>React & Redux</p>
+            <p>Bootstrap</p>
+          </div>
+          <div class="side-border">
+            <i class="fa fa-terminal"></i>
+            <h3>Back End</h3>
+            <p>Python</p>
+            <p>Javascript</p>
+            <p>Java</p>
+            <p>MongoDB</p>
+            <p>MySQL</p>
+            <p></p>
+          </div>
+          <div>
+            <i class="fa fa-cogs"></i>
+            <h3>Tools</h3>
+            <p>VS Code</p>
+            <p>Git & GitHub</p>
+            <p>IntelliJ</p>
+            <p>Figma</p>
+            <p>VMware</p>
+          </div>
+        </div>
+        <!-- was thinking of putting skills soon :)
+
+        <div class="skill-icons">
+          <figure>
+            <img src="https://img.freepik.com/free-icon/html-5_318-566077.jpg"/>
+            <figcaption>HTML</figcaption>
+          </figure>
+          <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png"/>
+            <figcaption>CSS</figcaption>
+          </figure>
+          <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png"/>
+            <figcaption>JavaScript</figcaption>
+          </figure>
+          <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png"/>
+            <figcaption>Python</figcaption>
+          </figure>
+          <figure>
+            <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png"/>
+            <figcaption>Java</figcaption>
+          </figure>
+          <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"/>
+            <figcaption>React</figcaption>
+          </figure>
+          <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png"/>
+            <figcaption>Bootstrap</figcaption>
+          </figure>
+          <figure>
+            <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/jquery_logo_icon_167804.png"/>
+            <figcaption>jQuery</figcaption>
+          </figure>
+          <figure>
+            <img src="https://sass-lang.com/assets/img/styleguide/seal-color-reversed.png"/>
+            <figcaption>SASS</figcaption>
+          </figure>
+          <figure>
+            <img src="https://cdn.worldvectorlogo.com/logos/redux.svg"/>
+            <figcaption>Redux</figcaption>
+          </figure>
+          <figure>
+            <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"/>
+            <figcaption>Git</figcaption>
+          </figure>
+          <figure>
+            <img src="https://s3-alpha.figma.com/hub/file/1481185752/fa4cd070-6a79-4e1b-b079-8b9b76408595-cover.png"/>
+            <figcaption>Figma</figcaption>
+          </figure>
+          <figure>
+            <img src="https://www.nicepng.com/png/full/52-520535_free-files-github-github-icon-png-white.png"/>
+            <figcaption>GitHub</figcaption>
+          </figure>
+          <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png"/>
+            <figcaption>VS Code</figcaption>
+          </figure>
+          <figure>
+            <img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_original_logo_icon_146424.png"/>
+            <figcaption>MongoDB</figcaption>
+          </figure>
+          <figure>
+            <img src="https://i0.wp.com/www.elearningworld.org/wp-content/uploads/2019/04/MySQL.svg.png?fit=600%2C400&ssl=1"/>
+            <figcaption>MySQL</figcaption>
+          </figure>
+          <figure>
+            <img src="https://clouddayscom.files.wordpress.com/2020/06/docker-logo.png"/>
+            <figcaption>Docker</figcaption>
+          </figure>
+        </div> -->
+      </div>
+    </section>
+    <section class="contact_container" id="contact">
+      <form action="https://formspree.io/f/meqbppdy" method="POST">
+        <h3>Get in Touch</h3>
+        <input type="text" name="Name" id="name" placeholder="Your Name" required>
+        <input type="email" name="Email" id="email" placeholder="Email" required>
+        <input type="text" name="Phone" id="phone" placeholder="Phone no." required>
+        <textarea id="message" name="Message" rows="4" placeholder="message" required></textarea>
+        <button type="submit"><b>Send</b></button>
+      </form>
+    </section>
+    <footer>
+      <p>© 2023 Melisha Shakya. All rights reserved</p>
+    </footer>
 
     <script src="script.js"></script>
   </body>
