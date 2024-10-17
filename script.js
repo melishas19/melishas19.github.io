@@ -3,6 +3,8 @@ const mediaQuery2 = window.matchMedia('(min-width: 550px)');
 let collapse=true;
 // Check if the media query is true
 
+
+/*
 function handleTabletChange(e){
   if (e.matches) {
   // Then trigger an alert
@@ -18,6 +20,10 @@ function handleTabletChange(e){
   document.getElementById("prj-img4").src="carpoolbull.png";
 }
 }
+
+mediaQuery.addListener(handleTabletChange);
+handleTabletChange(mediaQuery);
+*/
 
 function handleMenuBar(){
   if (collapse){
@@ -50,8 +56,7 @@ function handleNavChange(e){
   }
 }
 
-mediaQuery.addListener(handleTabletChange);
-handleTabletChange(mediaQuery);
+
 
 mediaQuery2.addListener(handleNavChange);
 handleNavChange(mediaQuery2);
