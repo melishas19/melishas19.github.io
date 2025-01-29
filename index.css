@@ -8,6 +8,7 @@
   --beforeshadow: #009cff;
   --shadow: #5696a0;
   --overlap: #132e41d6;
+  --projname: #E86A6A;
 }
 
   
@@ -219,12 +220,13 @@
 
   .proj-container{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 10px;
     grid-auto-rows: minmax(100px, auto);
     
   }
   
+  /*
   .project_container > .small-naming{
     border: 0px solid var(--beforeshadow);
     transition: border 0.9s ease-in-out;
@@ -236,14 +238,19 @@
     transition: border 0.9s ease-in-out;
     border-bottom: 5px solid var(--emphasis);
   }
+  */
+
+  .proj-naming{
+    color: var(--projname);
+  }
   
   .proj{
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
     margin: 50px;
-    max-width: 700px;
+    max-width: 1500px;
   }
   
   .proj-img{
@@ -262,9 +269,9 @@
     width: 100%;
     border: solid #00000000 5px;
     border-radius: 25px;
-    box-shadow: 5px 5px 5px 5px #00000096;
+    /*box-shadow: 5px 5px 5px 5px #00000096;*/
     scale:1;
-    transition: 0.8s ease-in-out;
+    transition: 0.5s ease-in-out;
   }
   
   .proj-mobile {
@@ -277,32 +284,48 @@
     bottom: 30px;
     right: 30px;
     scale:1;
-    transition: 0.8s ease-in-out;
+    transition: 0.5s ease-in-out;
   }
   
   .proj1-img:hover .proj-laptop{
     scale:0.95;
-    transition: 0.8s ease-in-out;
+    transition: 0.5s ease-in-out;
   }
   
   .proj2-img:hover .proj-laptop{
     scale:0.95;
-    transition: 0.8s ease-in-out;
+    transition: 0.5s ease-in-out;
   }
   
   .proj3-img:hover .proj-laptop{
     scale:0.95;
-    transition: 0.8s ease-in-out;
+    transition: 0.5s ease-in-out;
   }
 
   .proj-text{
-    text-align: justice;
+    text-align: left;
     padding: 0 50px;
+    align-content: center;
   }
 
   .proj-text h1{
     font-family: Geneva, Verdana, sans-serif;
-    text-align: center;
+  }
+
+  .proj-github-button{
+    background-color: #2E2E2F;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    margin: 20px 0;
+    transition: 0.5s ease-in-out;
+  }
+
+  .proj-github-button:hover{
+    cursor: pointer;
+    background-color: var(--projname);
+    color: black;
   }
   
   /*--------------------------------*/
@@ -466,6 +489,7 @@
     
     .about_container{
       flex-direction: column-reverse;
+      height: auto;
     }
     
     .pfp{
@@ -477,6 +501,10 @@
     }
 
     .proj-container{
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .proj{
       grid-template-columns: repeat(1, 1fr);
     }
     
