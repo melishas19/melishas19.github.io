@@ -1,342 +1,476 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
-    <title>Melisha Website</title>
-    <link rel="stylesheet" href="index.css" />
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-  </head>
+<html  lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+        <title>Melisha Website</title>
+        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="https://use.typekit.net/tuj4qwz.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/> <!--swiperJS CSS -->
+    </head>
 
-  <body class="body">
-    <nav class="top_nav" id="top_nav" >
-      <div class="top_nav_desktop">
-        <div><a class="yes-bar" href="#home">MELISHA'S PORTFOLIO</a></div>
-        <div id="desktop_nav">
-          <ul class="top_link">
-            <li><a class="no-bar" href="#about">About</a></li>
-            <li><a class="no-bar" href="#project">Project</a></li>
-            <li><a class="no-bar" href="#skill">Skills</a></li>
-            <li><a class="no-bar" href="#contact">Contact</a></li>
-            <li><i id="fa-bars" class="fa fa-bars"></i></li>
-          </ul>
-        </div>
-      </div>
-      <div id="mobile_nav">
-        <ul class="mobile_link" id="mobile_link">
-          <li><a href="#about">About</a></li>
-          <li><a href="#project">Project</a></li>
-          <li><a href="#skill">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    
-    
-    <div class="icons">
-      <ul>
-        <li class="v-line"></li>
-        <li><a href="https://www.linkedin.com/in/melisha-s/" target="_blank" style="color:white;"><i class="fa fa-linkedin-square"></i></a></li>
-        <li><a href="https://github.com/melishas19" target="_blank" style="color:white;"><i class="fa fa-github"></i></a></li>
-        <li><a href="contents/Melisha_Shakya_resume.pdf" target="_blank" style="color:white;"><i class="fa fa-file-pdf-o"></i></a></li>
-      </ul>
-    </div>
-    
-    <section class="home_container" id="home">
-      <span class="smaller-naming">-Hello World!</span>
-      <span class="small-naming">I'm </span>
-        <span class="naming">Melisha Shakya</span>
-        <span class="small-naming">Software Engineering</span>
-    </section>
-    <section class="about_container" id="about">
-      <div class="about-paragraph">
-        <h1 class="small-naming">About Me</h1>
-        <span>Im a Software Engineer. I graduated with B.S. in Computer Science. With a strong determination and passion for developing software application, I have been sharpening my skills on both the frontend and the backend development tools. 
-          I am always eager to work in a team, great at problem solving along with small details. My hobby outside of my career is to create digital arts and sketches.<span>
-      </div>
-      <div>
-        <img src="contents/prof.jpg" class="pfp" alt="Melisha's Picture"></img>
-      </div>
-    </section>
-    <section class="project_container" id="project">
-      <h1 class="small-naming">Projects</h1>
-      <div class="proj-container">
-        <div class="proj">
-          <div class="proj-img proj1-img">
-            <a href="https://github.com/melishas19/Produce-Pong" target="_blank"><img class="proj-laptop" src="contents/produce_pong.png" alt="Produce Pong Web App"></img></a>
-          </div>
-          <div class="proj-text">
-            <div style="font-size: x-large;">
-              <i class="devicon-mongodb-plain"></i>
-              <i class="devicon-html5-plain"></i>
-              <i class="devicon-css3-plain"></i>
-              <i class="devicon-javascript-plain"></i>
-              <i class="devicon-flask-original"></i>
-              <i class="devicon-github-original"></i>
-            </div>
-            <div>
-              <h1 class="proj-naming">Produce Pong</h1>
-              <span>Developed and deployed an engaging cooking game web application with real-time user interaction.
-               Led a team-based ideation process and performed database management, front-end, and back-end development. 
-                Utilized Flask, MongoDB along with HTML, CSS, and JavaScript for managing the client-side.
-                Tools used: MongoDB, HTML, CSS, JavaScript, Flask, GitHub, AJAX</span>
-            </div>
-            <div>
-              <a href="https://github.com/melishas19/Produce-Pong" target="_blank"><button class="proj-github-button">GitHub Page</button></a>
-            </div> 
-          </div>
-        </div>
-        <div class="proj">
-          <div class="proj-img proj2-img">
-            <a href="https://github.com/CSE370HCI/commitment" target="_blank"><img class="proj-laptop" src="contents/study_seeker.png" alt="Study Seeker Web App"></img></a>
-          </div>
-          <div class="proj-text">
-            <div style="font-size: x-large;">
-              <i class="devicon-react-original"></i>
-              <i class="devicon-html5-plain"></i>
-              <i class="devicon-css3-plain"></i>
-              <i class="devicon-javascript-plain"></i>
-              <i class="devicon-figma-plain"></i>
-              <i class="devicon-github-original"></i>
-            </div>
-            <div>
-              <h1 class="proj-naming">Study Seeker</h1> 
-              <span>Implemented student app fostering growth and academic success enabling connections based on shared academic interest.
-                Effective collaboration with a cross-functional team to create UX/UI design and build it into a fully functional community platform web app. 
-                Organized objectives and issues with Agile Methodologies. Tools used: React App, HTML, CSS, ZenHub, Figma, Github, React API</span>
-            </div>
-            <div>
-              <a href="https://github.com/CSE370HCI/commitment" target="_blank"><button class="proj-github-button">GitHub Page</button></a>
-            </div>
-          </div>
-        </div>
-        <div class="proj">
-          <div class="proj-img proj3-img">
-            <a href="https://www.figma.com/proto/1tCORRDhqOlPaks1K7A8nW/Carpool-Bull?node-id=1-3&starting-point-node-id=1%3A3&t=CFMXfKBzpau9r3bk-1" target="_blank"><img class="proj-laptop" src="contents/carpool_bull1.png" alt="CarPool Bull Web App"></img></a>
-          </div>
-          <div class="proj-text">
-            <div style="font-size: x-large;">
-              <i class="devicon-figma-plain"></i>
-            </div>
-            <div>
-              <h1 class="proj-naming">Carpool Bull</h1> 
-              <span>Designed an intuitive UI for a ride-sharing application that is tailored for University students, enabling them to
-                request/offer rides to local stores. Leveraged Figma for detailed wireframes and interactive prototypes.
-                Tools used: Figma</span>
-            </div>
-            <div>
-              <a href="https://www.figma.com/proto/1tCORRDhqOlPaks1K7A8nW/Carpool-Bull?node-id=1-3&starting-point-node-id=1%3A3&t=CFMXfKBzpau9r3bk-1" target="_blank"><button class="proj-github-button">Figma Page</button></a>
-            </div>
-          </div>
-        </div>
-        <div class="proj">
-          <div class="proj-img proj3-img">
-            <a href="https://github.com/melishas19/GameHub/tree/main/game-hub" target="_blank"><img class="proj-laptop" src="contents/game_hub.png" alt="GameHub Web App"></img></a>
-          </div>
-          <div class="proj-text">
-            <div style="font-size: x-large;">
-              <i class="devicon-react-original"></i>
-              <i class="devicon-html5-plain"></i>
-              <i class="devicon-css3-plain"></i>
-              <i class="devicon-github-original"></i>
-              <i class="devicon-bootstrap-plain"></i>
-            </div>
-            <div>
-              <h1 class="proj-naming">GameHub</h1> 
-              <span>Designed and developed a frontend interactive website providing entertaining game options for users to choose. 
-                This website showcases few selective games based on the game companies/game publishers or popularity. 
-                It is user interactive and responsive for better experience, more informative, and easy access to play the desired game.
-                Tools used: React App, HTML, CSS, Github, JSX, Bootstrap</span>
-            </div>
-            <div>
-              <a href="https://github.com/melishas19/GameHub/tree/main/game-hub" target="_blank"><button class="proj-github-button">GitHub Page</button></a>
-            </div>
-          </div>
-        </div>
-      </div>
+    <body>
 
 
-      <!-- previous change
-      <div class="all-projects">
-        <div class="project1">
-            <button><i class="fa fa-arrow-right"></i></button>
-            <div class="project-text">
-              <div class="project-text-inner">
-                <p><b>Study Seeker</b></p>
-                <p> This is a student community platform web app fostering growth and academic success, enabling connections based on shared academic interest.</p>
-                <p> Used Zenhub, GitHub, React.js, HTML, and CSS in Visual Studio Code.</p>
-                <a href="https://github.com/CSE370HCI/commitment" target="_blank" class="project_link" style="color: white;">
-                  <i class="fa fa-github"></i>GitHub
-                </a>
-              </div>
+        <nav class="top_nav" id="top_nav" >
+            <div class="top_nav_desktop">
+                <div><a class="yes-bar" href="#home">MELISHA'S PORTFOLIO</a></div>
+                <div id="desktop_nav">
+                <ul class="top_link">
+                    <li><a class="no-bar" href="#about">About</a></li>
+                    <li><a class="no-bar" href="#skill">Skills</a></li>
+                    <li><a class="no-bar" href="#project">Project</a></li>
+                    <li><a class="no-bar" href="#certification">Certification</a></li>
+                    <li><a class="no-bar" href="#contact">Contact</a></li>
+                    <li><i id="fa-bars" class="fa fa-bars"></i></li>
+                </ul>
+                </div>
             </div>
-            <img id="prj-img1" src="https://kinsta.com/wp-content/uploads/2019/01/portfolio-website-case-study.jpg" class="project1-bg">
-        </div>
-        <div class="project1">
-            <button><i class="fa fa-arrow-right"></i></button>
-            <div class="project-text">
-              <div class="project-text-inner">
-                <p><b>Pulsar's Produce Pong</b></p>
-                <p>This is a competitive cooking game with live interaction with users including gaming and messaging users.</p>
-                <p>Used Flask, flask-sockets, MongoDB, AJAX, Python, JavaScript, HTML, and CSS in Visual Studio Code.</p>
-                <a href="https://github.com/melishas19/Produce-Pong" target="_blank" class="project_link" style="color: white;">
-                  <i class="fa fa-github"></i>GitHub
-                </a>
-              </div>
+            <div id="mobile_nav">
+                <ul class="mobile_link" id="mobile_link">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#certification">Certification</a></li>
+                <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
-            <img id="prj-img2" src="https://designshack.net/wp-content/uploads/robertl.jpg" class="project1-bg">
-        </div>
-        <div class="project1">
-            <button><i class="fa fa-arrow-right"></i></button>
-            <div class="project-text">
-              <div class="project-text-inner">
-                <p><b>Conway's Game of Life</b></p>
-                <p>Implemented a simplified version of John Horton Conway’s Game of Life to create a small project.</p>
-                <p>Used C Programming language in VMware</p>
-              </div>
-            </div>
-            <img id="prj-img3" src="https://kinsta.com/wp-content/uploads/2019/01/portfolio-website-case-study.jpg" class="project1-bg">
-        </div>
-        <div class="project1">
-            <button><i class="fa fa-arrow-right"></i></button>
-            <div class="project-text">
-              <div class="project-text-inner">
-                <p><b>CarPool Bull</b></p>
-                <p>This is UX/UI design of a cross platform application for Univeristy students that enables them to request/give rides to local stores.</p>
-                <p>Used Figma for the functionality and product design.</p>
-                <a href="https://www.figma.com/proto/1tCORRDhqOlPaks1K7A8nW/Carpool-Bull?node-id=1-3&starting-point-node-id=1%3A3&mode=design&t=kw6XTjVuTzt1NO2c-1" target="_blank" class="project_link" style="color: white;">
-                  <i class="fa fa-object-group"></i>Figma
-                </a>
-              </div>
-            </div>
-            <img id="prj-img4" src="https://kinsta.com/wp-content/uploads/2019/01/portfolio-website-case-study.jpg" class="project1-bg">
-        </div>
-      </div>
-      -->
-    </section>
-    <section class="skill_container" id="skill">
-      <div class="skill-paragraph">
-        <h1 class="small-naming">Skills:</h1>
-        <div class="skill-icons">
-          <div class="side-border">
-            <i class="fa fa-code"></i>
-            <h3>Front End</h3>
-            <p>HTML</p>
-            <p>CSS & SASS</p>
-            <p>JavaScript</p>
-            <p>React & Redux</p>
-            <p>Bootstrap</p>
-          </div>
-          <div class="side-border">
-            <i class="fa fa-terminal"></i>
-            <h3>Back End</h3>
-            <p>Python</p>
-            <p>Javascript</p>
-            <p>Java</p>
-            <p>MongoDB</p>
-            <p>MySQL</p>
-            <p></p>
-          </div>
-          <div class="side-border">
-            <i class="fa fa-cogs"></i>
-            <h3>Tools</h3>
-            <p>VS Code</p>
-            <p>Git & GitHub</p>
-            <p>IntelliJ</p>
-            <p>Figma</p>
-            <p>VMware</p>
-          </div>
-        </div>
-        <!-- was thinking of putting skills soon :)
+        </nav>
 
-        <div class="skill-icons">
-          <figure>
-            <img src="https://img.freepik.com/free-icon/html-5_318-566077.jpg"/>
-            <figcaption>HTML</figcaption>
-          </figure>
-          <figure>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png"/>
-            <figcaption>CSS</figcaption>
-          </figure>
-          <figure>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png"/>
-            <figcaption>JavaScript</figcaption>
-          </figure>
-          <figure>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png"/>
-            <figcaption>Python</figcaption>
-          </figure>
-          <figure>
-            <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png"/>
-            <figcaption>Java</figcaption>
-          </figure>
-          <figure>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"/>
-            <figcaption>React</figcaption>
-          </figure>
-          <figure>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png"/>
-            <figcaption>Bootstrap</figcaption>
-          </figure>
-          <figure>
-            <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/jquery_logo_icon_167804.png"/>
-            <figcaption>jQuery</figcaption>
-          </figure>
-          <figure>
-            <img src="https://sass-lang.com/assets/img/styleguide/seal-color-reversed.png"/>
-            <figcaption>SASS</figcaption>
-          </figure>
-          <figure>
-            <img src="https://cdn.worldvectorlogo.com/logos/redux.svg"/>
-            <figcaption>Redux</figcaption>
-          </figure>
-          <figure>
-            <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"/>
-            <figcaption>Git</figcaption>
-          </figure>
-          <figure>
-            <img src="https://s3-alpha.figma.com/hub/file/1481185752/fa4cd070-6a79-4e1b-b079-8b9b76408595-cover.png"/>
-            <figcaption>Figma</figcaption>
-          </figure>
-          <figure>
-            <img src="https://www.nicepng.com/png/full/52-520535_free-files-github-github-icon-png-white.png"/>
-            <figcaption>GitHub</figcaption>
-          </figure>
-          <figure>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png"/>
-            <figcaption>VS Code</figcaption>
-          </figure>
-          <figure>
-            <img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_original_logo_icon_146424.png"/>
-            <figcaption>MongoDB</figcaption>
-          </figure>
-          <figure>
-            <img src="https://i0.wp.com/www.elearningworld.org/wp-content/uploads/2019/04/MySQL.svg.png?fit=600%2C400&ssl=1"/>
-            <figcaption>MySQL</figcaption>
-          </figure>
-          <figure>
-            <img src="https://clouddayscom.files.wordpress.com/2020/06/docker-logo.png"/>
-            <figcaption>Docker</figcaption>
-          </figure>
-        </div> -->
-      </div>
-    </section>
-    <section class="contact_container" id="contact">
-      <form action="https://formspree.io/f/meqbppdy" method="POST">
-        <h3>Get in Touch</h3>
-        <input type="text" name="Name" id="name" placeholder="Your Name" required>
-        <input type="email" name="Email" id="email" placeholder="Email" required>
-        <input type="text" name="Phone" id="phone" placeholder="Phone no." required>
-        <textarea id="message" name="Message" rows="4" placeholder="message" required></textarea>
-        <button type="submit"><b>Send</b></button>
-      </form>
-    </section>
-    <footer>
-      <p>© 2023 Melisha Shakya. All rights reserved</p>
-    </footer>
 
-    <script src="script.js"></script>
-  </body>
+        <!-- ------Hero section------ -->
+        <section class="hero_section" id="home">
+            <div class="hero-name">
+                <div><p>Melisha</p></div>
+                <div><p>Shakya</p></div>
+                <div><span>UX/UI Designer | UI Developer/Engineer</span></div>
+            </div>
+        </section>
+
+        <!-- ------About section------ -->
+        <section id="about">
+            <div class="about_content block">
+                <div class="about_img">
+                    <img src="contents/heroImage.png" alt="Melisha Shakya picture" class="floating_img">
+                </div>
+                <div class="about_text">
+                    <div><p>ABOUT ME</p></div>
+                    <div>
+                        <span>
+                            Hey there! 
+                            I’m Melisha Shakya — a curious, coffee-fueled UX/UI designer-in-training, 
+                            currently working on my Master’s in User Experience Design. I started out 
+                            in Computer Science, but quickly realized I was way more excited about creating 
+                            things that make people say, “Ooh, that’s nice!” than just writing code behind the
+                            scenes. Right now, I’m diving into everything from wireframes and user flows to 
+                            color theory and usability testing. I might be early in my UX journey, but I’m 
+                            building a strong foundation and loving every step of the process (even the messy 
+                            Figma files). When I’m not designing, I’m probably sketching, making digital art, 
+                            singing badly (but confidently), or getting way too competitive over video games. 
+                            I’m all about blending creativity and logic — whether it’s through a clean interface 
+                            or a quick doodle.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ------Skill section------ -->
+        <section class="skill_section" id="skill">
+
+            <div class="skill_content">
+                <div class="skill_head block">
+                    <button> MY SKILLS</button>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="744" height="423" viewBox="0 0 744 423" fill="none">
+                            <path d="M2 126.5V86H258V0M366.5 422.5V0M741.5 133V86H481.5V0" stroke="url(#paint0_linear_2101_768)" stroke-width="4"></path><defs><linearGradient id="paint0_linear_2101_768" x1="371.963" y1="12" x2="359.62" y2="389.388" gradientUnits="userSpaceOnUse"><stop stop-color="#292929"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></linearGradient></defs></svg>
+                    </div>
+                </div>
+                <div class="skill_button_content">
+                    <div class="skill_button_content_top block">
+                        <div>
+                            <button> <!-- -->HTML<!-- --> <!-- --> </button>
+                            <button> <!-- -->CSS<!-- --> <!-- --> </button>
+                            <button> <!-- -->javaScript<!-- --> <!-- --> </button>
+                            <button> <!-- -->React<!-- --> <!-- --> </button>
+                            <button> <!-- -->Next js<!-- --> <!-- --> </button>
+                            <button> <!-- -->Zustand<!-- --> <!-- --> </button>
+                            <button> <!-- -->Tailwind CSS<!-- --> <!-- --> </button>
+                            <button> <!-- -->Framer motion<!-- --> <!-- --> </button>
+                            <button> <!-- -->DOM<!-- --> <!-- --> </button>
+                            <button> <!-- -->Unit Test<!-- --> <!-- --> </button>
+                            <button> <!-- -->Performance Optimize<!-- --> <!-- --> </button>
+                            <button> <!-- -->SSR<!-- --> <!-- --> </button>
+                        </div>
+                        <div>
+                            <button> <!-- -->Node<!-- --> <!-- --> </button>
+                            <button> <!-- -->.NET Core<!-- --> <!-- --> </button>
+                            <button> <!-- -->ASP.NET Core<!-- --> <!-- --> </button>
+                            <button> <!-- -->Bun<!-- --> <!-- --> </button>
+                            <button> <!-- -->Express<!-- --> <!-- --> </button>
+                            <button> <!-- -->Rest Api<!-- --> <!-- --> </button>
+                            <button> <!-- -->Validation<!-- --> <!-- --> </button>
+                            <button> <!-- -->JWT/OAuth<!-- --> <!-- --> </button>
+                            <button> <!-- -->SQL<!-- --> <!-- --> </button>
+                            <button> <!-- -->Postgres<!-- --> <!-- --> </button>
+                            <button> <!-- -->Prisma ORM<!-- --> <!-- --> </button>
+                            <button> <!-- -->EF Core<!-- --> <!-- --> </button>
+                            <button> <!-- -->DB Modeling<!-- --> <!-- --> </button>
+                            <button> <!-- -->Stripe Payments<!-- --> <!-- --> </button>
+                        </div>
+                    </div>
+                    <div class="skill_button_content_bottom block">
+                        <div>
+                            <button> <!-- -->JavaScript<!-- --> <!-- --> </button>
+                            <button> <!-- -->TypeScript<!-- --> <!-- --> </button>
+                            <button> <!-- -->Python<!-- --> <!-- --> </button>
+                            <button> <!-- -->C#<!-- --> <!-- --> </button>
+                        </div>
+                        <div>
+                            <button> <!-- -->React Native<!-- --> <!-- --> </button>
+                            <button> <!-- -->Git<!-- --> <!-- --> </button>
+                            <button> <!-- -->Github<!-- --> <!-- --> </button>
+                            <button> <!-- -->Linux<!-- --> <!-- --> </button>
+                            <button> <!-- -->WordPress<!-- --> <!-- --> </button>
+                            <button> <!-- -->VPS<!-- --> <!-- --> </button>
+                            <button> <!-- -->Vercel<!-- --> <!-- --> </button>
+                        </div>
+                        <div>
+                            <button> <!-- -->UX/UI Design<!-- --> <!-- --> </button>
+                            <button> <!-- -->Product design<!-- --> <!-- --> </button>
+                            <button> <!-- -->Figma<!-- --> <!-- --> </button>
+                            <button> <!-- -->Adobe XD<!-- --> <!-- --> </button>
+                            <button> <!-- -->Wireframe<!-- --> <!-- --> </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ------Project section------ -->
+        <section id="project">
+
+            <div class="project_box">
+                <p>PROJECTS</p>
+                <div class="project-content">
+
+                    <!-- ------Produce Pong------ -->
+                    <div class="proj block">
+                        <div>
+                            <a href="https://github.com/melishas19/Produce-Pong" target="_blank"><img class="proj-img" src="contents/produce_pong.png" alt="Produce Pong Web App"></img></a>
+                        </div>
+                        <div class="proj-text">
+                            <div style="font-size: xx-large;">
+                            <i class="devicon-mongodb-plain"></i>
+                            <i class="devicon-html5-plain"></i>
+                            <i class="devicon-css3-plain"></i>
+                            <i class="devicon-javascript-plain"></i>
+                            <i class="devicon-flask-original"></i>
+                            <i class="devicon-github-original"></i>
+                            </div>
+                            <div>
+                            <p>Produce Pong</p>
+                            <span>Developed and deployed an engaging cooking game web application with real-time user interaction.
+                                Led a team-based ideation process and performed database management, front-end, and back-end development. 
+                                Utilized Flask, MongoDB along with HTML, CSS, and JavaScript for managing the client-side.
+                                Tools used: MongoDB, HTML, CSS, JavaScript, Flask, GitHub, AJAX</span>
+                            </div>
+                            <div>
+                            <a href="https://github.com/melishas19/Produce-Pong" target="_blank"><button class="proj-github-button">GitHub Page</button></a>
+                            </div> 
+                        </div>
+                    </div>
+
+                    <!-- ------Study Seeker------ -->
+                    <div class="proj block">
+                    <div>
+                        <a href="https://github.com/CSE370HCI/commitment" target="_blank"><img class="proj-img" src="contents/study_seeker.png" alt="Study Seeker Web App"></img></a>
+                    </div>
+                    <div class="proj-text">
+                        <div style="font-size: xx-large;">
+                        <i class="devicon-react-original"></i>
+                        <i class="devicon-html5-plain"></i>
+                        <i class="devicon-css3-plain"></i>
+                        <i class="devicon-javascript-plain"></i>
+                        <i class="devicon-figma-plain"></i>
+                        <i class="devicon-github-original"></i>
+                        </div>
+                        <div>
+                        <p>Study Seeker</p> 
+                        <span>Implemented student app fostering growth and academic success enabling connections based on shared academic interest.
+                            Effective collaboration with a cross-functional team to create UX/UI design and build it into a fully functional community platform web app. 
+                            Organized objectives and issues with Agile Methodologies. Tools used: React App, HTML, CSS, ZenHub, Figma, Github, React API</span>
+                        </div>
+                        <div>
+                        <a href="https://github.com/CSE370HCI/commitment" target="_blank"><button class="proj-github-button">GitHub Page</button></a>
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-- ------Carpool Bull------ -->
+                    <div class="proj block">
+                    <div>
+                        <a href="https://www.figma.com/proto/1tCORRDhqOlPaks1K7A8nW/Carpool-Bull?node-id=1-3&starting-point-node-id=1%3A3&t=CFMXfKBzpau9r3bk-1" target="_blank"><img class="proj-img" src="contents/carpool_bull1.png" alt="CarPool Bull Web App"></img></a>
+                    </div>
+                    <div class="proj-text">
+                        <div style="font-size: xx-large;">
+                        <i class="devicon-figma-plain"></i>
+                        </div>
+                        <div>
+                        <p>Carpool Bull</p> 
+                        <span>Designed an intuitive UI for a ride-sharing application that is tailored for University students, enabling them to
+                            request/offer rides to local stores. Leveraged Figma for detailed wireframes and interactive prototypes.
+                            Tools used: Figma</span>
+                        </div>
+                        <div>
+                        <a href="https://www.figma.com/proto/1tCORRDhqOlPaks1K7A8nW/Carpool-Bull?node-id=1-3&starting-point-node-id=1%3A3&t=CFMXfKBzpau9r3bk-1" target="_blank"><button class="proj-github-button">Figma Page</button></a>
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-- ------GameHub------ -->
+                    <div class="proj block">
+                    <div>
+                        <a href="https://github.com/melishas19/GameHub/tree/main/game-hub" target="_blank"><img class="proj-img" src="contents/game_hub.png" alt="GameHub Web App"></img></a>
+                    </div>
+                    <div class="proj-text">
+                        <div style="font-size: xx-large;">
+                        <i class="devicon-react-original"></i>
+                        <i class="devicon-html5-plain"></i>
+                        <i class="devicon-css3-plain"></i>
+                        <i class="devicon-github-original"></i>
+                        <i class="devicon-bootstrap-plain"></i>
+                        </div>
+                        <div>
+                        <p>GameHub</p> 
+                        <span>Designed and developed a frontend interactive website providing entertaining game options for users to choose. 
+                            This website showcases few selective games based on the game companies/game publishers or popularity. 
+                            It is user interactive and responsive for better experience, more informative, and easy access to play the desired game.
+                            Tools used: React App, HTML, CSS, Github, JSX, Bootstrap</span>
+                        </div>
+                        <div>
+                        <a href="https://github.com/melishas19/GameHub/tree/main/game-hub" target="_blank"><button class="proj-github-button">GitHub Page</button></a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ------Certification section------ -->
+        <section id="certification">
+            
+            <!-- ------Certification Desktop section------ -->
+            <div class="certification-box block">
+                <p>CERTIFICATION</p>
+                <div class="certification-content">
+
+                    <div class="certification-bottom-content">
+
+                        <div>
+                            <a href="https://www.freecodecamp.org/certification/Melisha_S/responsive-web-design" target="_blank">
+                                <div class="each-card">
+                                    <img src="contents/certification/FCC-certification1.png" alt="Responsive Web design">
+                                    <div class="cetificate-name">
+                                        <span>Responsive Web Design</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="https://www.freecodecamp.org/certification/Melisha_S/front-end-development-libraries" target="_blank">
+                                <div class="each-card">
+                                    <img src="contents/certification/FCC-certification2.png" alt="Font End Development Libraries">
+                                    <div class="cetificate-name"><span>Font End Development Libraries</span></div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="certification-top-content">
+
+                        <div>
+                            <a href="https://www.linkedin.com/learning/certificates/f2c0297b62620afc6e2153f8e9030be4bca23b6e01dab577a914d3f1996bc202" target="_blank">
+                                <div class="each-card">
+                                    <img src="contents/certification/linkedin-APIs.jpg" alt="APIs and Web Services">
+                                    <div class="cetificate-name">
+                                        <span>APIs & Web Services</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="https://www.linkedin.com/learning/certificates/ab79c9f9d9f204a67f6fa54bf8dfc8b84949e841758e0c141e092b28a02270fa" target="_blank">
+                                <div class="each-card">
+                                    <img src="contents/certification/linkedin-kubernetes.jpg" alt="Kubernetes: Essential Tools">
+                                    <div class="cetificate-name"><span>Kubernetes: Essential Tools</span></div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="https://www.linkedin.com/learning/certificates/2d498e3753574b22a63237ab9025bd4a069fa81857f59d913c50fd20125bc407" target="_blank">
+                                <div class="each-card">
+                                    <img src="contents/certification/linkedin-mongo.jpg" alt="Learning MongoDB">
+                                    <div class="cetificate-name"><span>Learning MongoDB</span></div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="https://www.linkedin.com/learning/certificates/868045b16ff9a4d9c1e6321682ad5814e9e9800ff37c6489006ca70c8fdf15a3" target="_blank">
+                                <div class="each-card">
+                                    <img src="contents/certification/linkedin-postgre.jpg" alt="PostgreSQL Essential Training">
+                                    <div class="cetificate-name"><span>PostgreSQL Essential Training</span></div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="https://www.linkedin.com/learning/certificates/0652b4d666c16c912d4140580019ecca7e39e11f8253d87a1c356a0790eca2e2" target="_blank">
+                                <div class="each-card">
+                                    <img src="contents/certification/linkedin-nodejs.jpg" alt="Node.js Essential Training">
+                                    <div class="cetificate-name"><span>Node.js Essential Training</span></div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="https://www.linkedin.com/learning/certificates/aa238f48cc5b2837312a80f9357b02df7c35255189c83a907aa865cb06488737" target="_blank">
+                                <div class="each-card">
+                                    <img src="contents/certification/linkedin-spring_boot.jpg" alt="Spring Boot 2.0">
+                                    <div class="cetificate-name"><span>Spring Boot 2.0</span></div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <!-- ------Certification Mobile section------ -->
+            <div class="certification-swiper-container">
+            <swiper-container class="certification-mobile-box mySwiper" navigation="true">
+                <swiper-slide>
+                    <div class="certificate-mobile-card swiper-slide">
+                            <div>
+                                <a href="https://www.freecodecamp.org/certification/Melisha_S/responsive-web-design" target="_blank">
+                                    <img src="contents/certification/FCC-certification1.png" alt="Responsive Web Design">
+                                </a>
+                            </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="certificate-mobile-card swiper-slide">
+                            <div>
+                                <a href="https://www.freecodecamp.org/certification/Melisha_S/front-end-development-libraries" target="_blank">
+                                    <img src="contents/certification/FCC-certification2.png" alt="Font End Development Libraries">
+                                </a>
+                            </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="certificate-mobile-card swiper-slide">
+                            <div>
+                                <a href="https://www.linkedin.com/learning/certificates/f2c0297b62620afc6e2153f8e9030be4bca23b6e01dab577a914d3f1996bc202" target="_blank">
+                                    <img src="contents/certification/linkedin-APIs.jpg" alt="APIs and Web Services">
+                                </a>
+                            </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="certificate-mobile-card swiper-slide">
+                            <div>
+                                <a href="https://www.linkedin.com/learning/certificates/ab79c9f9d9f204a67f6fa54bf8dfc8b84949e841758e0c141e092b28a02270fa" target="_blank">
+                                    <img src="contents/certification/linkedin-kubernetes.jpg" alt="Kubernetes: Essential Tools">
+                                </a>
+                            </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="certificate-mobile-card swiper-slide">
+                            <div>
+                                <a href="https://www.linkedin.com/learning/certificates/2d498e3753574b22a63237ab9025bd4a069fa81857f59d913c50fd20125bc407" target="_blank">
+                                    <img src="contents/certification/linkedin-mongo.jpg" alt="Learning MongoDB">
+                                </a>
+                            </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="certificate-mobile-card swiper-slide">
+                            <div>
+                                <a href="https://www.linkedin.com/learning/certificates/868045b16ff9a4d9c1e6321682ad5814e9e9800ff37c6489006ca70c8fdf15a3" target="_blank">
+                                    <img src="contents/certification/linkedin-postgre.jpg" alt="PostgreSQL Essential Training">
+                                </a>
+                            </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="certificate-mobile-card swiper-slide">
+                            <div>
+                                <a href="https://www.linkedin.com/learning/certificates/0652b4d666c16c912d4140580019ecca7e39e11f8253d87a1c356a0790eca2e2" target="_blank">
+                                    <img src="contents/certification/linkedin-nodejs.jpg" alt="Node.js Essential Training">
+                                </a>
+                            </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="certificate-mobile-card swiper-slide">
+                            <div>
+                                <a href="https://www.linkedin.com/learning/certificates/aa238f48cc5b2837312a80f9357b02df7c35255189c83a907aa865cb06488737" target="_blank">
+                                    <img src="contents/certification/linkedin-spring_boot.jpg" alt="Spring Boot 2.0">
+                                </a>
+                            </div>
+                    </div>
+                </swiper-slide>
+            </swiper-container>
+            </div>
+
+
+        </section>
+
+
+        <!-- ------Contact section------ -->
+        <section id="contact">
+
+            <div class="contact-box block">
+                <p>GET IN TOUCH</p>
+                <div class="contact-title">
+                    <span>I'm eager to join a collaborative team where I can contribute my skills and learn from others. 
+                    If you have an exciting project, let's discuss how I can be a valuable asset. I'm actively seeking 
+                    a new opportunity to apply my skills and continue growing!</span>
+                </div>
+                <div class="contact_container">
+                    <form action="https://formspree.io/f/meqbppdy" method="POST">
+                        <input type="text" name="Name" id="name" placeholder="Your Name" required>
+                        <input type="email" name="Email" id="email" placeholder="Email" required>
+                        <input type="text" name="Phone" id="phone" placeholder="Phone no." required>
+                        <textarea id="message" name="Message" rows="4" placeholder="Message" required></textarea>
+                        <button type="submit"><i class="fa fa-paper-plane"></i>Send</button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ------Footer section------ -->
+         <hr>
+        <footer>
+            <p>Designed and Coded by <b>Melisha Shakya</b>. Built with HTML, CSS, Bootstrap, and Javascript</p>
+        </footer>
+
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="script.js" type="text/javascript"></script>
+    <script src="swiper.js" type="module"></script>
 </html>

@@ -1,34 +1,37 @@
-const mediaQuery = window.matchMedia('(max-width: 550px)');
-const mediaQuery2 = window.matchMedia('(min-width: 550px)');
-let collapse=true;
-// Check if the media query is true
+
 
 
 /*
-function handleTabletChange(e){
-  if (e.matches) {
-  // Then trigger an alert
-  console.log("hehehe")
-  document.getElementById("prj-img1").src="https://media.istockphoto.com/id/1367980878/vector/futuristic-geometric-deep-blue-gradation-background-illustration.jpg?s=612x612&w=0&k=20&c=3s7xQfMSUcBQq_ZNTruiz-qELXenAPGnGypj4Z-daAE=";;
-  document.getElementById("prj-img2").src="https://media.istockphoto.com/id/1367980878/vector/futuristic-geometric-deep-blue-gradation-background-illustration.jpg?s=612x612&w=0&k=20&c=3s7xQfMSUcBQq_ZNTruiz-qELXenAPGnGypj4Z-daAE=";;
-  document.getElementById("prj-img3").src="https://media.istockphoto.com/id/1367980878/vector/futuristic-geometric-deep-blue-gradation-background-illustration.jpg?s=612x612&w=0&k=20&c=3s7xQfMSUcBQq_ZNTruiz-qELXenAPGnGypj4Z-daAE=";;
-  document.getElementById("prj-img4").src="https://media.istockphoto.com/id/1367980878/vector/futuristic-geometric-deep-blue-gradation-background-illustration.jpg?s=612x612&w=0&k=20&c=3s7xQfMSUcBQq_ZNTruiz-qELXenAPGnGypj4Z-daAE=";;
-}else{
-  document.getElementById("prj-img1").src="studyseeker.png";
-  document.getElementById("prj-img2").src="producepong.png";
-  document.getElementById("prj-img3").src="conways.png";
-  document.getElementById("prj-img4").src="carpoolbull.png";
-}
-}
+window.addEventListener("scroll", () => {
+      const images = document.querySelectorAll(".floating_img");
+      const scrollTop = window.scrollY;
+      let mql = window.matchMedia("(width >= 1050px)");
+      if(mql.matches){
+        images.forEach((img) => {
+          const rect = img.getBoundingClientRect();
+          const offsetTop = rect.top + scrollTop;
+          const speed = 0.3;
+          const distance = (scrollTop - offsetTop + window.innerHeight / 2) * speed;
+          img.style.transform = `translate3d(0, ${distance}px, 0) scale(1)`;
+      });
+      }
+      else{
+        images.forEach((img) => {
+          img.style.transform = `none`;
+        });
+      }
 
-mediaQuery.addListener(handleTabletChange);
-handleTabletChange(mediaQuery);
+    });
 */
+
+const mediaQuery = window.matchMedia('(max-width: 550px)');
+const mediaQuery2 = window.matchMedia('(min-width: 550px)');
+let collapse=true;
 
 function handleMenuBar(){
   if (collapse){
     collapse=false;
-    document.getElementById("top_nav").style.height="150px";
+    document.getElementById("top_nav").style.height="250px";
     document.getElementById("mobile_nav").style.opacity="1";
     document.getElementById("mobile_nav").style.right="0px";
     document.getElementById("mobile_link").style.opacity="1";
@@ -36,7 +39,7 @@ function handleMenuBar(){
   }
   else{
     collapse=true;
-    document.getElementById("top_nav").style.height="50px";
+    document.getElementById("top_nav").style.height="70px";
     document.getElementById("mobile_nav").style.opacity="0";
     document.getElementById("mobile_nav").style.right="-100%";
     document.getElementById("mobile_link").style.opacity="0";
@@ -48,7 +51,7 @@ function handleMenuBar(){
 function handleNavChange(e){
   if (e.matches) {
     collapse=true;
-    document.getElementById("top_nav").style.height="50px";
+    document.getElementById("top_nav").style.height="70px";
     document.getElementById("mobile_nav").style.opacity="0";
     document.getElementById("mobile_nav").style.right="-100%";
     document.getElementById("mobile_link").style.opacity="0";
@@ -65,3 +68,4 @@ const menubar= document.getElementById("fa-bars");
 menubar.addEventListener("click",handleMenuBar);
 
 document.getElementById("mobile_link").addEventListener("click",handleMenuBar);
+
