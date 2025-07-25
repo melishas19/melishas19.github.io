@@ -26,6 +26,7 @@ window.addEventListener("scroll", () => {
 
 const mediaQuery = window.matchMedia('(max-width: 550px)');
 const mediaQuery2 = window.matchMedia('(min-width: 550px)');
+console.log(mediaQuery2.matches);
 let collapse=true;
 
 function handleMenuBar(){
@@ -39,7 +40,12 @@ function handleMenuBar(){
   }
   else{
     collapse=true;
-    document.getElementById("top_nav").style.height="70px";
+    if(mediaQuery2.matches){
+      document.getElementById("top_nav").style.height="80px";
+    }
+    else{
+      document.getElementById("top_nav").style.height="50px";
+    }
     document.getElementById("mobile_nav").style.opacity="0";
     document.getElementById("mobile_nav").style.right="-100%";
     document.getElementById("mobile_link").style.opacity="0";
@@ -51,7 +57,15 @@ function handleMenuBar(){
 function handleNavChange(e){
   if (e.matches) {
     collapse=true;
-    document.getElementById("top_nav").style.height="70px";
+    document.getElementById("top_nav").style.height="80px";
+    document.getElementById("mobile_nav").style.opacity="0";
+    document.getElementById("mobile_nav").style.right="-100%";
+    document.getElementById("mobile_link").style.opacity="0";
+    document.getElementById("mobile_link").style.right="-100%";
+  }
+  else{
+    collapse=true;
+    document.getElementById("top_nav").style.height="50px";
     document.getElementById("mobile_nav").style.opacity="0";
     document.getElementById("mobile_nav").style.right="-100%";
     document.getElementById("mobile_link").style.opacity="0";

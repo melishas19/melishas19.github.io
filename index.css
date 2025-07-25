@@ -55,14 +55,15 @@ section {
 /*--------------Navigation section--------------*/
 
 .top_nav{
-    height: 70px;
+    height: 80px;
+    width: 100%;
     background-color: #000000c9;
     color: var(--secondary-color);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
+    position: fixed;
     top: 0;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -98,6 +99,7 @@ section {
   
   .top_nav li{
     padding-right: 20px;
+    padding-bottom: 10px;
   }
   
   .icons{
@@ -175,6 +177,7 @@ section {
     background-size: cover;
     justify-items: center;
     height: 90vh;
+    padding: 10vw 0;
 }
 
 .hero_section div{
@@ -753,6 +756,10 @@ footer b{
         --regular-text-size: medium;
         --title-text-size: x-large;
         --container-padding: 0 2vw;
+    }
+    
+    .top_nav{
+        height: 50px;
     }
 
     .skill_content{
