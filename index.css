@@ -762,6 +762,13 @@ footer b{
         height: 50px;
     }
 
+    .hero-name{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
     .skill_content{
         padding: 0 5vw;
     }
@@ -795,8 +802,8 @@ footer b{
     }
 
     footer p, b {
-    font-size: small;
-}
+        font-size: small;
+    }
     
   }
 
