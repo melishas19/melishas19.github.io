@@ -24,8 +24,8 @@ window.addEventListener("scroll", () => {
     });
 */
 
-const mediaQuery = window.matchMedia('(max-width: 550px)');
-const mediaQuery2 = window.matchMedia('(min-width: 550px)');
+const mediaQuery = window.matchMedia('(max-width: 800px)');
+const mediaQuery2 = window.matchMedia('(min-width: 800px)');
 console.log(mediaQuery2.matches);
 let collapse=true;
 
