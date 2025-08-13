@@ -41,10 +41,10 @@ function handleMenuBar(){
   else{
     collapse=true;
     if(mediaQuery2.matches){
-      document.getElementById("top_nav").style.height="80px";
+      document.getElementById("top_nav").style.height="90px";
     }
     else{
-      document.getElementById("top_nav").style.height="50px";
+      document.getElementById("top_nav").style.height="60px";
     }
     document.getElementById("mobile_nav").style.opacity="0";
     document.getElementById("mobile_nav").style.right="-100%";
@@ -57,7 +57,7 @@ function handleMenuBar(){
 function handleNavChange(e){
   if (e.matches) {
     collapse=true;
-    document.getElementById("top_nav").style.height="80px";
+    document.getElementById("top_nav").style.height="90px";
     document.getElementById("mobile_nav").style.opacity="0";
     document.getElementById("mobile_nav").style.right="-100%";
     document.getElementById("mobile_link").style.opacity="0";
@@ -65,7 +65,7 @@ function handleNavChange(e){
   }
   else{
     collapse=true;
-    document.getElementById("top_nav").style.height="50px";
+    document.getElementById("top_nav").style.height="60px";
     document.getElementById("mobile_nav").style.opacity="0";
     document.getElementById("mobile_nav").style.right="-100%";
     document.getElementById("mobile_link").style.opacity="0";

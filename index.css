@@ -55,9 +55,8 @@ section {
 /*--------------Navigation section--------------*/
 
 .top_nav{
-    height: 80px;
+    height: 90px;
     width: 100%;
-    background-color: #000000c9;
     color: var(--secondary-color);
     display: flex;
     flex-direction: column;
@@ -65,8 +64,6 @@ section {
     align-items: center;
     position: fixed;
     top: 0;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
     z-index: 999;
     transition: 2s ease;
     overflow-x: hidden;
@@ -75,15 +72,21 @@ section {
   }
   
   .top_nav_desktop{
-    width: 100%;
+    width: 95%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background-color: #000000c9;
+    border-radius: 50px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    margin: 5px;
   }
   
   .yes-bar{
     padding-left: 10px;
+    height: 50px;
   }
   
   .top_link{
@@ -99,7 +102,6 @@ section {
   
   .top_nav li{
     padding-right: 20px;
-    padding-bottom: 10px;
   }
   
   .icons{
@@ -153,7 +155,7 @@ section {
     transition: 2s ease-in-out;
     position: absolute;
     top: 50px;
-    right: -100%;
+    right: -50%;
   }
   
   #mobile_link{
@@ -161,14 +163,25 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: end;
-    transition: 3s ease;
+    transition: 2s ease;
     opacity:0;
     position: absolute;
-    right: -100%;
+    right: -50%;
+    background-color: #000000c9;
+    border-radius: 25px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 15px;
+    padding-right: 0;
+    margin: 5px;
   }
 
   .top_nav_logo{
     padding-left: 40px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .nav_logo{
@@ -748,6 +761,10 @@ footer b{
     .nav_logo{
         height: 35px;
         width: 35px;
+    }
+
+    .yes-bar{
+        height: 35px;
     }
 
     section {
