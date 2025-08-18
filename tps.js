@@ -31,8 +31,8 @@ function navHighlighter() {
   });
 
   //if the scroll is at the bottom of the page
-  if(counter>=7){
-    document.querySelector(".navigation a[href*=" + 't6' + "]").classList.add("active");
+  if(counter>=10){
+    document.querySelector(".navigation a[href*=" + 't8' + "]").classList.add("active");
   }
 
   const activeElement=document.querySelector('.active');
