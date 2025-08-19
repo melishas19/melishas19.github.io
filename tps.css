@@ -74,7 +74,11 @@ section {
     font-size: large;
     text-decoration: none;
     color: #FF8A1F;
-    padding-left: 40px;
+    padding-left: 10px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .top_nav a:hover{
@@ -652,7 +656,10 @@ hr{
 
 footer{
     background-color: #45465E;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100px;
     color: white;
 }
@@ -721,7 +728,7 @@ footer b{
     }
 
     .top_nav a{
-        padding-left: 20px;
+        padding: 0;
     }
 
     .nav_logo{
